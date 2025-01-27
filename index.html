@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+    <h1 id='title'> <strong>SpongeBob SquarePants Quizz</strong></h1>
+    <img class="portada" src="https://img.quizur.com/f/img620fb27b1d2635.29007862.jpg?lastEdited=1645195930">
+    <p id="description">Tell us which are your favorite characters from the SpongeBob SquarePants series and why. Are you a fan of the ocean's most famous sponge, the grumpy Squidward, or maybe the funny Patrick? We want to hear from you!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input id="name" name="name" type="text" required placeholder="Enter your name"/></label>
+      <label id="email-label">Email <input id="email" name="email" type="email" required placeholder="Enter your mail"/></label>
+      <label id="number-label">Age <input id="number" name="age" type="number" required min="6" max="120"placeholder="Enter your age" /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Who is your favorite SpongeBob SquarePants character?
+        <select id="dropdown" name="dropdown">
+            <option>Select one</option>
+            <option>SpongeBob SquarePants</option>
+            <option>Patrick Star</option>
+            <option>Squidward Tentacles</option>
+            <option>Mr. Krabs</option>
+            <option>Sandy Cheeks</option>
+            <option>Plankton</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+       <p>Which character do you think is more intelligent?</p>
+       <label for="Mr-Krabs"><input id="Mr-Krabs" name="intelligence" type="radio" value="Mr-Krabs"checked/> Mr. Krabs <img src="https://e0.pxfuel.com/wallpapers/471/340/desktop-wallpaper-mr-krabs-png-mr-krabs-money-png-mr-krabs.jpg"></label>
+       <label for="Plankton"><input id="Plankton" name="intelligence" type="radio" value="Plankton"/> Plankton <img src="https://orig00.deviantart.net/d036/f/2007/346/f/a/plankton_by_spacenoob.jpg"></label>
+       </fieldset>
+       <fieldset>
+        <p>Which SpongeBob characters do you think are the most important for the series?</p> <p> <em>Select all the options that apply:</em></p>
+        <label for="sponge"><input type="checkbox" id="sponge" name="importance" value="sponge"/> SpongeBob SquarePants</label>
+       <label for="patrick"><input type="checkbox" id="patrick" name="importance" value="patrick"/> Patrick Star</label>
+       <label for="squidward"><input type="checkbox" id="squidward" name="importance" value="squidward"/> Squidward Tentacles</label>
+       <label for="krabs"><input type="checkbox" id="krabs" name="importance" value="krabs"/> Mr. Krabs</label>
+       <label for="sandy"><input type="checkbox" id="sandy" name="importance" value="sandy"/> Sandy Cheeks</label>
+       <label for="plankton"><input type="checkbox" id="plankton" name="importance" value="plankton"/> Plankton</label>
+       <label for="gary"><input type="checkbox" id="gary" name="importance" value="gary"/> Gary the Snail</label>
+       </fieldset>
+       <fieldset>
+        <label for="comment">Why do you like your favorite SpongeBob SquarePants character?
+        <textarea id="comment" name="comment" placeholder="Write your answer in the space provided" rows="4" cols="30"></textarea></label>
+        <button id="submit" type="submit" value="submit">Submit</button>
+       </fieldset>
+    </form>
+    </div>
+  </body>
+  </html>
